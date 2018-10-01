@@ -190,7 +190,7 @@ class Anvil2World(WorldFormat):
 
         return World(directory, root_tag, wrapper)
 
-    def __read_palette(self, palette: nbt.TAG_List) -> list:
+    def _read_palette(self, palette: nbt.TAG_List) -> list:
         blockstates = []
         for entry in palette:
             name = entry["Name"].value
