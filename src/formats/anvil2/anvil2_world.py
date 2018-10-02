@@ -151,6 +151,7 @@ def _decode_long_array(long_array: array_like, size: int) -> ndarray:
     ][:size]
 
 
+
 def _encode_long_array(data_array: array_like, palette_size: int) -> ndarray:
     """
     Encode an array of data to a long array (from BlockStates or Heightmaps).
